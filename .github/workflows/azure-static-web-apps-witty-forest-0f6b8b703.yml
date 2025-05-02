@@ -16,7 +16,7 @@ jobs:
       with:
         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
         action: "upload"
-        app_location: "/"  # This is where your static files (like index.html) are
-        output_location: "/"  # Static content stays in the root
-        app_build_command: ""  # This skips the build step (add empty command)
+        app_location: "/"  # Location of the static files (index.html)
+        output_location: "/"
+        app_build_command: ""  # Skip the build process
         github_token: ${{ secrets.GITHUB_TOKEN }}
